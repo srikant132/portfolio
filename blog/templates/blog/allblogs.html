@@ -46,10 +46,10 @@
           <br>
           <h2>Latest Posts</h2>
           <hr>
-                                                             #here we create loop for each blog iteration 4
+
        {% for blog in blogs.all  %}
 
-      <a href="#"><h3>{{ blog.title }}</h3></a>
+      <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
 
        {{ blog.pub_date_pretty }}
        <br>
@@ -62,7 +62,7 @@
        </div>
      </main>
 
-    <footer class="text-dark">
+    <footer class="text-muted">
       <div class="container text-center">
         <p>©️ Srikant kumar {% now "Y" %}</p>
       </div>
