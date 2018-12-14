@@ -126,12 +126,12 @@ USE_TZ = True
 
 STATICFILES_DIRS = [
 
- os.path.join(BASE_DIR, 'portfolio/static/')
+     os.path.join(BASE_DIR, 'portfolio/static/')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')  #here we add static files related to media
+STATIC_URL = '/static/'                          #this static may be any thing
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  #this used to save file in media file
 MEDIA_URL = '/media/'
